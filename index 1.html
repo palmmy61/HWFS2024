@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="quiz-container">
+       <h1>ระบบข้อสอบอย่างง่าย Simple Quiz</h1>
+       <div class="question">
+           <p id="question1">PIM ย่อมาจากอะไร ?</p>
+           <button class="button" onclick="checkAnswer('a', 1)">A) พีไอเอ็ม</button>
+           <button class="button" onclick="checkAnswer('b', 1)">B) ปิ๋ม</button>
+           <button class="button" onclick="checkAnswer('c', 1)">C) พิม</button>
+           <button class="button" onclick="checkAnswer('d', 1)">D) ภีม</button>
+           <button class="button" onclick="checkAnswer('e', 1)">E) วอนยอง</button>
+           <p class="result" id="result1"></p>
+       </div>
+       <div class="question">
+           <p id="question2">HTML ย่อมาจากอะไร ?</p>
+           <button class="button" onclick="checkAnswer('a', 2)">A) Hyper Text Markup Language</button>
+           <button class="button" onclick="checkAnswer('b', 2)">B) Hyperlinks and Text Markup Language</button>
+           <button class="button" onclick="checkAnswer('c', 2)">C) Home Tool Markup Language</button>
+           <button class="button" onclick="checkAnswer('d', 2)">D) How to Make a Link</button>
+           <p class="result" id="result2"></p>
+       </div>
+       <p id="summary"></p>
+   </div>
+
+   <script src="app.js"></script>
+</body>
+</html>
